@@ -5,6 +5,7 @@ L’objectif du projet est de proposer une interface moderne, accessible et cent
 
 L’application a été conçue en appliquant les principes d’ergonomie, de perception visuelle, de hiérarchisation de l’information et de conception centrée utilisateur. Deux phases d’évaluation ont été menées : un **test de perception** et un **test utilisateur**, afin d’améliorer progressivement l’expérience proposée.
 
+![Home Page IHM](assets/home-page.png)
 
 ## Lancement du projet
 
