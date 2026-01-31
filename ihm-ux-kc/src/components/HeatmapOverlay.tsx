@@ -20,23 +20,10 @@ const HeatmapOverlay: React.FC<Props> = ({ points }) => {
 
     const grad = ctx.createLinearGradient(0, 0, 256, 0);
     
-    // Alpha 0.0 à 0.1 : Transparent
-    grad.addColorStop(0.0, 'rgba(0,0,0,0)');
-    
-    // Alpha ~0.25 (1 clic) : VERT
-    grad.addColorStop(0.2, 'rgba(0, 255, 0, 0.9)'); 
-    grad.addColorStop(0.3, 'rgba(0, 255, 0, 1)');
-
-    // Alpha ~0.50 (2 clics) : JAUNE
-    grad.addColorStop(0.45, 'rgba(255, 255, 0, 1)');
-    grad.addColorStop(0.55, 'rgba(255, 255, 0, 1)');
-
-    // Alpha ~0.75 (3 clics) : ORANGE
-    grad.addColorStop(0.7, 'rgba(255, 165, 0, 1)');
-    grad.addColorStop(0.8, 'rgba(255, 165, 0, 1)');
-
-    // Alpha > 0.8 (4+ clics) : ROUGE
-    grad.addColorStop(0.9, 'rgba(255, 0, 0, 1)');
+    grad.addColorStop(0.0, 'rgba(255, 255, 0, 0)');
+    grad.addColorStop(0.3, 'rgba(255, 255, 0, 0.7)');
+    grad.addColorStop(0.5, 'rgba(255, 165, 0, 0.8)');
+    grad.addColorStop(0.7, 'rgba(255, 69, 0, 0.9)');
     grad.addColorStop(1.0, 'rgba(255, 0, 0, 1)');
 
     ctx.fillStyle = grad;
@@ -52,8 +39,8 @@ const HeatmapOverlay: React.FC<Props> = ({ points }) => {
     if (!ctx) return;
 
     const resizeCanvas = () => {
-        canvas.width = document.documentElement.scrollWidth;
-        canvas.height = document.documentElement.scrollHeight;
+      canvas.width = document.documentElement.scrollWidth;
+      canvas.height = document.documentElement.scrollHeight;
     };
     
     resizeCanvas();
@@ -64,33 +51,37 @@ const HeatmapOverlay: React.FC<Props> = ({ points }) => {
     const currentPathPoints = points.filter(p => p.path === location.pathname);
 
     if (currentPathPoints.length > 0) {
-        ctx.shadowBlur = 15;
-        ctx.shadowColor = 'black'; 
+      currentPathPoints.forEach(point => {
+        const gradient = ctx.createRadialGradient(
+          point.x, point.y, 0,
+          point.x, point.y, 25
+        );
         
-        currentPathPoints.forEach(point => {
-            ctx.beginPath();
-            ctx.arc(point.x, point.y, 20, 0, Math.PI * 2);
-            ctx.fillStyle = 'rgba(0, 0, 0, 0.25)'; 
-            ctx.fill();
-        });
+        gradient.addColorStop(0, 'rgba(0, 0, 0, 0.8)');
+        gradient.addColorStop(0.5, 'rgba(0, 0, 0, 0.4)');
+        gradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
+        
+        ctx.fillStyle = gradient;
+        ctx.fillRect(point.x - 25, point.y - 25, 50, 50);
+      });
 
-        const palette = getGradientPalette();
-        if (palette) {
-            const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-            const data = imageData.data;
+      const palette = getGradientPalette();
+      if (palette) {
+        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+        const data = imageData.data;
 
-            for (let i = 0; i < data.length; i += 4) {
-                const alpha = data[i + 3];
-                if (alpha > 0) {
-                    const offset = alpha * 4;
-                    data[i] = palette[offset];     // R
-                    data[i + 1] = palette[offset + 1]; // G
-                    data[i + 2] = palette[offset + 2]; // B
-                    data[i + 3] = palette[offset + 3]; // A
-                }
-            }
-            ctx.putImageData(imageData, 0, 0);
+        for (let i = 0; i < data.length; i += 4) {
+          const alpha = data[i + 3];
+          if (alpha > 0) {
+            const offset = Math.min(255, alpha) * 4;
+            data[i] = palette[offset];
+            data[i + 1] = palette[offset + 1];
+            data[i + 2] = palette[offset + 2];
+            data[i + 3] = palette[offset + 3];
+          }
         }
+        ctx.putImageData(imageData, 0, 0);
+      }
     }
 
     return () => window.removeEventListener('resize', resizeCanvas);

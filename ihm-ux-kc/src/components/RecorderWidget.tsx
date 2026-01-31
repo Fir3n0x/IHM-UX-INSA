@@ -49,7 +49,7 @@ const RecorderWidget: React.FC = () => {
         screenSize: { width: window.innerWidth, height: window.innerHeight },
         clicks: clicks
     };
-    
+
     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(dataToExport, null, 2));
     const downloadAnchorNode = document.createElement('a');
     downloadAnchorNode.setAttribute("href", dataStr);
@@ -102,13 +102,12 @@ const RecorderWidget: React.FC = () => {
   const handleStop = () => stopRecording();
   const handleReset = () => {
       resetClicks();
-      setStats({ fileCount: 0 }); // On reset aussi les stats d'import si on vide
+      setStats({ fileCount: 0 });
   };
 
   return (
     <>
       {/* AFFICHAGE DE LA HEATMAP */}
-      {/* On passe les clicks du contexte à l'overlay */}
       {showHeatmap && clicks.length > 0 && (
         <HeatmapOverlay points={clicks} />
       )}
@@ -116,7 +115,7 @@ const RecorderWidget: React.FC = () => {
       {/* WIDGET FLOTTANT */}
       <div 
         data-ignore-clicks="true"
-        className={`fixed bottom-4 right-4 z-[10000] transition-all duration-300 font-sans ${
+        className={`fixed bottom-4 right-4 z-[10000] transition-all duration-300 font-sans hidden lg:block ${
             isMinimized ? 'w-auto' : 'w-80'
         }`}
       >
@@ -137,7 +136,7 @@ const RecorderWidget: React.FC = () => {
                         </>
                     ) : (
                         <span className="flex items-center gap-2">
-                             🧪 Test & Analyse
+                             Test des scénarios
                              {clicks.length > 0 && <span className="text-xs bg-blue-600 px-1.5 rounded-full">{clicks.length}pts</span>}
                         </span>
                     )}
@@ -149,9 +148,7 @@ const RecorderWidget: React.FC = () => {
 
             {/* Corps du Widget */}
             {!isMinimized && (
-                <div className="p-4 space-y-4 bg-zinc-800">
-                    
-                    {/* --- ZONE ENREGISTREMENT --- */}
+                <div className="p-4 space-y-4 bg-zinc-800">    
                     <div>
                         <div className="flex justify-between items-center mb-1">
                             <label className="text-[10px] text-zinc-400 uppercase font-bold tracking-wider">Enregistrement</label>
@@ -211,7 +208,6 @@ const RecorderWidget: React.FC = () => {
 
                     <hr className="border-zinc-700" />
 
-                    {/* --- ZONE ANALYSE / IMPORT --- */}
                     <div>
                         <div className="flex justify-between items-center mb-2">
                             <label className="text-[10px] text-zinc-400 uppercase font-bold tracking-wider">Analyse (Heatmap)</label>
@@ -269,7 +265,6 @@ const RecorderWidget: React.FC = () => {
                             </div>
                         )}
                     </div>
-
                 </div>
             )}
         </div>

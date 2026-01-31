@@ -2,13 +2,14 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { FaWalking } from 'react-icons/fa';
+import banner from "../../assets/banner.jpg";
 
 const HeroSection: React.FC = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
 
   // Image de fond pour la section Hero
-  const backgroundImage = '/src/assets/banner.jpg';
+  const backgroundImage = banner;
 
   return (
     <div className="relative w-full h-[400px] lg:h-[500px] overflow-hidden">
