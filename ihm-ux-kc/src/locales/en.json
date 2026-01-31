@@ -1,0 +1,205 @@
+{
+    "header": {
+        "home": "Home",
+        "map": "Map",
+        "contact": "Contact",
+        "about": "About",
+        "profile": "Profile",
+        "favorites": "My favorites",
+        "settings": "Settings",
+        "logout": "Logout",
+        "login": "Login",
+        "toggleLanguage": "Switch to French",
+        "toggleTheme": "Toggle theme",
+        "openMenu": "Open navigation menu",
+        "closeMenu": "Close navigation menu"
+    },
+    "footer": {
+        "footTitle": "2025 — HMI Project Rennes • Directed by Corentin Mahieu and Kelian Ninet",
+        "footDescription": "Data from the Open Data portal of the City of Rennes. All rights reserved.",
+        "instagramLabel": "See our Instagram",
+        "linkedinLabel": "See our LinkedIn",
+        "emailLabel": "Send us an email"
+    },
+    "home": {
+        "bannerButton": "Discover a place to enjoy your activity",
+        "welcomeTitle": "Welcome to Rennes Loisirs",
+        "welcomeDescription": "Find and explore all the places to enjoy sports activities in Rennes !",
+        "activities": {
+            "Football": "Football",
+            "Tennis": "Tennis",
+            "Basketball": "Basketball",
+            "Fitness": "Fitness",
+            "Tennis de table": "Table tennis",
+            "Street Workout": "Street workout",
+            "Parcours de santé": "Health trail",
+            "Rugby": "Rugby",
+            "Pétanque": "Pétanque",
+            "Glisse urbaine": "Urban skating",
+            "Handball": "Handball",
+            "Volley-ball": "Volleyball",
+            "Babyfoot": "Foosball",
+            "Course à pied": "Running",
+            "Cyclisme": "Cycling",
+            "Échecs": "Chess",
+            "Espace de rafraîchissement": "Refreshment area",
+            "Hockey sur gazon": "Field hockey",
+            "Molky": "Molky",
+            "Slackline": "Slackline",
+            "Bicross": "BMX",
+            "Baseball": "Baseball"
+        },
+        "unknownType": "Unknown type",
+        "stats": {
+            "equipments": "Equipments",
+            "activities": "Activities"
+        },
+        "nearbyEquipments": "Places to discover near you"
+    },
+    "equip-list": {
+        "titleTabs": "Nearby sports facilities",
+        "filtersText": "Filters",
+        "favoritesText": "Favorites",
+        "equipNotFound": "No equipment matches the filters.",
+        "practiceLabel": "Practices :",
+        "accessLabel": "Access :",
+        "timeLabel": "Hours :",
+        "descriptionLabel": "Description :",
+        "unknownEqt": "Unknown name",
+        "unknownType": "Unknown type",
+        "addFavorite": "Add to favorites",
+        "removeFavorite": "Remove from favorites",
+        "searchPlaceholder": "Search by name...",
+        "equipmentsDisplayed": "equipments"
+    },
+    "contact": {
+        "contactTitle": "Contact us",
+        "contactFirstNameText": "First Name",
+        "contactFirstNameInput": "First Name",
+        "contactLastNameText": "Last Name",
+        "contactLastNameInput": "Last Name",
+        "contactMailText": "E-mail",
+        "contactMailInput": "E-mail",
+        "contactMessageText": "Message",
+        "contactMessageInput": "Message",
+        "contactSendButton": "Send",
+        "contactSuccessTitle": "Thank you!",
+        "contactSuccessDescription": "Your message has been sent successfully. We will get back to you soon.",
+        "contactSuccessButton": "Send another message"
+    },
+    "about": {
+        "aboutMainTitle": "About Rennes Loisirs",
+        "aboutTitle": "👨‍💻 Who are we?",
+        "aboutDescription": "We are two students passionate about web development and interface design. This application was created as part of a Human-Machine Interface (HMI) project at INSA Rennes.",
+        "objectiveTitle": "📍 Our goal",
+        "objectiveDescription": "To provide an interactive map listing the main places to practice physical activities in Rennes: sports fields, parks, stadiums, gyms, tracks, green spaces, etc.",
+        "typeTitle": "📊 An open approach",
+        "typeDescription": "By relying on open data from the City of Rennes, we aim to offer a simple and intuitive tool that allows everyone to discover new places to play sports, alone or with friends.",
+        "valueTitle": "🎯 Our values",
+        "valueDescription": "This project highlights data visualization, ergonomics, and user experience, while promoting local initiatives that encourage physical activity and well-being.",
+        "footerMessageBegin": "Created by",
+        "footerMessageEnd": "Project carried out as part of the HMI course — INSA Rennes"
+    },
+    "profile": {
+        "title": "My Profile",
+        "tabProfile": "Profile",
+        "tabFavorites": "My Favorites",
+        "tabSettings": "Settings",
+        "tabUsers": "Users",
+        "welcomeText": "Welcome",
+        "modifyUsernameText": "Change username:",
+        "modifyUsernameButton": "Save username",
+        "modifyPasswordText": "Change password:",
+        "modifyPasswordButton": "Save password",
+        "deleteAccount": "Delete my account"
+    },
+    "favorites": {
+        "titleFav": "Your favorite equipment",
+        "noFavoriteFound": "No favorites saved.",
+        "typeLabel": "Type:",
+        "practiceLabel": "Practices:",
+        "accessLabel": "Access:",
+        "timeLabel": "Opening hours:",
+        "descriptionLabel": "Description"
+    },
+    "settings": {
+        "logoutButton": "Log out"
+    },
+    "users": {
+        "textTitle": "Users list",
+        "tabId": "ID",
+        "tabName": "Name",
+        "tabRight": "Role",
+        "tabActions": "Actions",
+        "switchRightButton": "Switch role",
+        "deleteAccount": "Delete",
+        "admin": "admin",
+        "user": "user",
+        "confirmationMessage": "Delete this user ?",
+        "noUsers": "No users found.",
+        "currentUser": "It's you"
+    },
+    "login": {
+        "loginTitle": "Login",
+        "userTitle": "Username",
+        "passwordTitle": "Password",
+        "loginButton": "Log in",
+        "createAccount": "Don't have an account? Sign up !",
+        "errorLogin": "Incorrect credentials"
+    },
+    "register": {
+        "registerTitle": "Create an account",
+        "userTitle": "Username",
+        "passwordTitle": "Password",
+        "confirmPasswordTitle": "Confirm password",
+        "registerButton": "Sign up",
+        "errorPasswordCheck": "Passwords do not match.",
+        "errorPasswordCharacter": "Password must contain at least 4 characters.",
+        "errorUsername": "This username already exists.",
+        "successCreateAccount": "Account successfully created!"
+    },
+    "logout": {
+        "logoutTitle": "You are logged out",
+        "logoutDescription": "Thank you for using Rennes Loisirs.",
+        "logoutButton": "Back to home"
+    },
+    "map": {
+        "errorGeolocation": "Geolocation refused or not available:",
+        "errorJson": "Error GeoJSON:",
+        "loadingData": "Loading the map...",
+        "errorNetwork": "Error loading the map."
+    },
+    "mapview": {
+        "selfPosition": "You are here",
+        "unknownName": "Unknown name"
+    },
+    "filtersPopup": {
+        "title": "Available filters",
+        "sportFilter": "Sports equipment",
+        "accessTitle": "Accessibility",
+        "resetButton": "Reset",
+        "apply": "Apply",
+        "moreFilter": "+ filters",
+        "lessFilter": "- filters",
+        "close": "Close filters window"
+    },
+    "howItWorks": {
+        "title": "How it works ?",
+        "step1": {
+            "title": "Search",
+            "desc": "Find a sports facility near you"
+        },
+        "step2": {
+            "title": "Locate",
+            "desc": "See its position on the map"
+        },
+        "step3": {
+            "title": "Enjoy",
+            "desc": "Enjoy your activity"
+        },
+        "step4": {
+            "title": "Save",
+            "desc": "Add your favorite equipment"
+        }
+    }
+}

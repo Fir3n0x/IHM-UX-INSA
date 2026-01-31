@@ -1,0 +1,205 @@
+{
+    "header": {
+        "home": "Accueil",
+        "map": "Carte",
+        "contact": "Contact",
+        "about": "À propos",
+        "profile": "Profil",
+        "favorites": "Mes favoris",
+        "settings": "Paramètres",
+        "logout": "Déconnexion",
+        "login": "Se connecter",
+        "toggleLanguage": "Passer à l'anglais",
+        "toggleTheme": "Basculer le thème",
+        "openMenu": "Ouvrir le menu de navigation",
+        "closeMenu": "Fermer le menu de navigation"
+    },
+    "footer": {
+        "footTitle": "2025 — Projet IHM Rennes • Réalisé par Corentin Mahieu et Kelian Ninet",
+        "footDescription": "Données issues du portail Open Data de la Ville de Rennes. Tous droits réservés.",
+        "instagramLabel": "Voir notre Instagram",
+        "linkedinLabel": "Voir notre LinkedIn",
+        "emailLabel": "Nous envoyer un e-mail"
+    },
+    "home": {
+        "bannerButton": "Découvre un lieu pour pratiquer ton activité",
+        "welcomeTitle": "Bienvenue sur Rennes Loisirs",
+        "welcomeDescription": "Trouve et explore tous les lieux pour pratiquer des activités sportives à Rennes !",
+        "activities": {
+            "Football": "Football",
+            "Tennis": "Tennis",
+            "Basketball": "Basketball",
+            "Fitness": "Fitness",
+            "Tennis de table": "Tennis de table",
+            "Street Workout": "Street Workout",
+            "Parcours de santé": "Parcours de santé",
+            "Rugby": "Rugby",
+            "Pétanque": "Pétanque",
+            "Glisse urbaine": "Glisse urbaine",
+            "Handball": "Handball",
+            "Volley-ball": "Volley-ball",
+            "Babyfoot": "Babyfoot",
+            "Course à pied": "Course à pied",
+            "Cyclisme": "Cyclisme",
+            "Échecs": "Échecs",
+            "Espace de rafraîchissement": "Espace de rafraîchissement",
+            "Hockey sur gazon": "Hockey sur gazon",
+            "Molky": "Molky",
+            "Slackline": "Slackline",
+            "Bicross": "Bicross",
+            "Baseball": "Baseball"
+        },
+        "unknownType": "Type inconnu",
+        "stats": {
+            "equipments": "Équipements",
+            "activities": "Activités"
+        },
+        "nearbyEquipments": "Lieux à découvrir près de chez toi"
+    },
+    "equip-list": {
+        "titleTabs": "Équipements sportifs à proximité",
+        "filtersText": "Filtres",
+        "favoritesText": "Favoris",
+        "equipNotFound": "Aucun équipement ne correspond aux filtres.",
+        "practiceLabel": "Pratiques :",
+        "accessLabel": "Accès :",
+        "timeLabel": "Horaires :",
+        "descriptionLabel": "Description :",
+        "unknownEqt": "Sans nom",
+        "unknownType": "Type inconnu",
+        "addFavorite": "Ajouter aux favoris",
+        "removeFavorite": "Retirer des favoris",
+        "searchPlaceholder": "Rechercher par nom...",
+        "equipmentsDisplayed": "équipements"
+    },
+    "contact": {
+        "contactTitle": "Contacte-nous",
+        "contactFirstNameText": "Prénom",
+        "contactFirstNameInput": "Prénom",
+        "contactLastNameText": "Nom",
+        "contactLastNameInput": "Nom",
+        "contactMailText": "E-mail",
+        "contactMailInput": "E-mail",
+        "contactMessageText": "Message",
+        "contactMessageInput": "Message",
+        "contactSendButton": "Envoyer",
+        "contactSuccessTitle": "Merci !",
+        "contactSuccessDescription": "Ton message a bien été envoyé. Nous te répondrons bientôt.",
+        "contactSuccessButton": "Envoyer un autre message"
+    },
+    "about": {
+        "aboutMainTitle": "À propos de Rennes Loisirs",
+        "aboutTitle": "👨‍💻 Qui sommes-nous ?",
+        "aboutDescription": "Nous sommes deux étudiants passionnés par le développement web et le design d’interfaces. Cette application a été conçue dans le cadre d’un projet d’IHM (Interface Homme-Machine) à l’INSA Rennes.",
+        "objectiveTitle": "📍 Notre objectif",
+        "objectiveDescription": "Proposer une carte interactive répertoriant les principaux lieux où pratiquer une activité physique à Rennes : terrains de sport, parcs, stades, gymnases, pistes, espaces verts, etc.",
+        "typeTitle": "📊 Une approche ouverte",
+        "typeDescription": "En nous appuyant sur les données ouvertes de la Ville de Rennes, nous souhaitons offrir un outil simple et intuitif permettant à chacun de découvrir de nouveaux endroits pour faire du sport, seul ou entre amis.",
+        "valueTitle": "🎯 Nos valeurs",
+        "valueDescription": "Ce projet met en avant la visualisation de données, l’ergonomie et l’expérience utilisateur, tout en valorisant les initiatives locales favorisant l’activité physique et le bien-être.",
+        "footerMessageBegin": "Réalisé par",
+        "footerMessageEnd": "Projet réalisé dans le cadre du cours d’IHM — INSA Rennes"
+    },
+    "profile": {
+        "title": "Mon Profil",
+        "tabProfile": "Profil",
+        "tabFavorites": "Mes Favoris",
+        "tabSettings": "Paramètres",
+        "tabUsers": "Utilisateurs",
+        "welcomeText": "Bienvenue",
+        "modifyUsernameText": "Modifier le nom d'utilisateur :",
+        "modifyUsernameButton": "Enregistrer le nom d'utilisateur",
+        "modifyPasswordText": "Modifier le mot de passe :",
+        "modifyPasswordButton": "Enregistrer le mot de passe",
+        "deleteAccount": "Supprimer mon compte"
+    },
+    "favorites": {
+        "titleFav": "Tes équipements favoris",
+        "noFavoriteFound": "Aucun favori enregistré.",
+        "typeLabel": "Type:",
+        "practiceLabel": "Pratiques:",
+        "accessLabel": "Accès:",
+        "timeLabel": "Horaires:",
+        "descriptionLabel": "Description:"
+    },
+    "settings": {
+        "logoutButton": "Se déconnecter"
+    },
+    "users": {
+        "textTitle": "Liste des utilisateurs",
+        "tabId": "ID",
+        "tabName": "Nom",
+        "tabRight": "Droit",
+        "tabActions": "Actions",
+        "switchRightButton": "Changer droits",
+        "deleteAccount": "Supprimer",
+        "admin": "admin",
+        "user": "utilisateur",
+        "confirmationMessage": "Supprimer cet utilisateur ?",
+        "noUsers": "Aucun utilisateur trouvé.",
+        "currentUser": "C'est toi"
+    },
+    "login": {
+        "loginTitle": "Connexion",
+        "userTitle": "Nom d'utilisateur",
+        "passwordTitle": "Mot de passe",
+        "loginButton": "Se connecter",
+        "createAccount": "Pas encore de compte ? Inscris-toi !",
+        "errorLogin": "Identifiants incorrects"
+    },
+    "register": {
+        "registerTitle": "Créer un compte",
+        "userTitle": "Nom d'utilisateur",
+        "passwordTitle": "Mot de passe",
+        "confirmPasswordTitle": "Confirmer le mot de passe",
+        "registerButton": "S'inscrire",
+        "errorPasswordCheck": "Les mots de passe ne correspondent pas.",
+        "errorPasswordCharacter": "Le mot de passe doit contenir au moins 4 caractères.",
+        "errorUsername": "Ce nom d'utilisateur existe déjà.",
+        "successCreateAccount": "Compte créé avec succès !"
+    },
+    "logout": {
+        "logoutTitle": "Tu es déconnecté",
+        "logoutDescription": "Merci d'avoir utilisé Rennes Loisirs.",
+        "logoutButton": "Retour à l'accueil"
+    },
+    "map": {
+        "errorGeolocation": "Géolocalisation refusée ou indisponible:",
+        "errorJson": "Erreur GeoJSON:",
+        "loadingData": "Chargement de la carte...",
+        "errorNetwork": "Erreur lors du chargement de la carte."
+    },
+    "mapview": {
+        "selfPosition": "Tu es ici",
+        "unknownName": "Sans nom"
+    },
+    "filtersPopup": {
+        "title": "Filtres disponibles",
+        "sportFilter": "Équipements sportifs",
+        "accessTitle": "Accessibilité",
+        "resetButton": "Réinitialiser",
+        "apply": "Appliquer",
+        "moreFilter": "+ de filtres",
+        "lessFilter": "- de filtres",
+        "close": "Fermer la fenêtre des filtres"
+    },
+    "howItWorks": {
+        "title": "Comment ça marche ?",
+        "step1": {
+            "title": "Recherche",
+            "desc": "Trouve un équipement sportif près de chez toi"
+        },
+        "step2": {
+            "title": "Localise",
+            "desc": "Visualise sa position sur la carte"
+        },
+        "step3": {
+            "title": "Pratique",
+            "desc": "Profite de ton activité"
+        },
+        "step4": {
+            "title": "Sauvegarde",
+            "desc": "Ajoute tes équipements favoris"
+        }
+    }
+}
