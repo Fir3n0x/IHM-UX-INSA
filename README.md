@@ -107,7 +107,7 @@ Accéder à l'interface utilisateur en cliquant sur une des urls proposée.
 
 Projet réalisé par :
 
-- **Kelian Ninet** – [@Fir3n0x](https://github.com/Fir3n0x)
-- **Corentin Mahieu** - [@S0nju](https://github.com/S0nju)
+- **Kelian Ninet** – [@S0nju](https://github.com/S0nju)
+- **Corentin Mahieu** - [@Fir3n0x](https://github.com/Fir3n0x)
 
 Dans le cadre du cours **IHM‑UX — INSA Rennes (2025‑2026)**.
